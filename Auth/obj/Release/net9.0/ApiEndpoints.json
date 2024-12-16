@@ -1,0 +1,13 @@
+[
+  {
+    "ContainingType": "Auth.Controllers.AuthController",
+    "Method": "Get",
+    "RelativePath": "Auth/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "GetToken"
+  }
+]

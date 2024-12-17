@@ -52,8 +52,9 @@ builder.Services.AddCors(options =>
     });
 });
 
-builder.Services.AddScoped<ITreeNodePopulator<User>, TreeNodePopulator<User>>();
+builder.Services.AddScoped<ITreeNodePopulator<Category>, TreeNodePopulator<Category>>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddSingleton<IValidator<User>, UserValidator>();
 
 var app = builder.Build();

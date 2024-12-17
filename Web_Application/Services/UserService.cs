@@ -11,13 +11,11 @@ namespace Web_Application.Services
     public class UserService : IUserService
     {
         private readonly TestDbContext _dbContext;
-        private ITreeNodePopulator<User> _treeNodePopulator;
         private readonly IValidator<User> _validator;
 
-        public UserService(TestDbContext dbContext, ITreeNodePopulator<User> treeNodePopulator, IValidator<User> validator)
+        public UserService(TestDbContext dbContext, IValidator<User> validator)
         {
             _dbContext = dbContext;
-            _treeNodePopulator = treeNodePopulator;
             _validator = validator;
         }
 
@@ -43,7 +41,7 @@ namespace Web_Application.Services
             return Result<IEnumerable<User>>.Success(_dbContext.Users);
         }
 
-        public Result<Common.Models.Pagination.PagedResult<TreeNode<User>>> GetUsersPaginated(int page = 1, int pageSize = 10)
+        public Result<Common.Models.Pagination.PagedResult<User>> GetUsersPaginated(int page = 1, int pageSize = 10)
         {
             page = page < 1 ? 1 : page;
             pageSize = pageSize < 1 ? 10 : pageSize;
@@ -51,11 +49,9 @@ namespace Web_Application.Services
             var totalUsers = _dbContext.Users.ToList();
             int totalCount = totalUsers.Count();
 
-            var tree = _treeNodePopulator.PopulateTreeNode(totalUsers, null);
+            var pagedUsers = totalUsers.Skip((page - 1) * pageSize).Take(pageSize).ToList();
 
-            var pagedUsers = tree.Skip((page - 1) * pageSize).Take(pageSize).ToList();
-
-            var result = new Common.Models.Pagination.PagedResult<TreeNode<User>>
+            var result = new Common.Models.Pagination.PagedResult<User>
             {
                 Items = pagedUsers,
                 TotalCount = totalCount,

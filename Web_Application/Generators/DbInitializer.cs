@@ -1,4 +1,5 @@
 ﻿using Common;
+using Web_Application.Generators.Categories;
 using Web_Application.Generators.Users;
 
 namespace Web_Application.Generators
@@ -13,8 +14,10 @@ namespace Web_Application.Generators
             context.Database.EnsureCreated();
 
             var fakeUsers = new UserGenerator().GetFaker().Generate(1000);
+            var fakeCategories = new CategoryGenerator().GetFaker().Generate(1000);
 
             context.Users.AddRange(fakeUsers);
+            context.Categories.AddRange(fakeCategories);
             context.SaveChanges();
         }
     }

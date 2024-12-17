@@ -4,15 +4,11 @@ using Common.Models.DTO;
 
 namespace Common.Models.Domain
 {
-    public class User : IHasId, IHasParentId
+    public class User : IHasId
     {
         public Guid Id { get; set; }
 
-        public Guid? ParentId { get; set; }
-
         public string Name { get; set; } = string.Empty;
-
-        public string? CompleteFamilyName { get; set; }
 
         public string Email { get; set; } = string.Empty;
 
@@ -22,12 +18,10 @@ namespace Common.Models.Domain
 
         public int YearsOfWork { get; set; }
 
-        public User(Guid id, Guid? parentId, string name, string? completeFamilyName, string email, bool isActive, Colors favoriteColor, int yearsOfWork)
+        public User(Guid id, string name, string email, bool isActive, Colors favoriteColor, int yearsOfWork)
         {
             Id = id;
-            ParentId = parentId;
             Name = name;
-            CompleteFamilyName = completeFamilyName;
             Email = email;
             IsActive = isActive;
             FavoriteColor = favoriteColor;
@@ -37,7 +31,6 @@ namespace Common.Models.Domain
         public User(CreateUserDto createUserDto)
         {
             Id = Guid.CreateVersion7();
-            ParentId = createUserDto.ParentId;
             Name = createUserDto.Name;
             Email = createUserDto.Email;
             IsActive = createUserDto.IsActive;

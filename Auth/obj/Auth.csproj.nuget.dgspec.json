@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jmtrr\\source\\repos\\Benchmark\\Auth\\Auth.csproj": {}
+    "C:\\Users\\Joao Reis\\source\\repos\\net9poc\\Auth\\Auth.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jmtrr\\source\\repos\\Benchmark\\Auth\\Auth.csproj": {
+    "C:\\Users\\Joao Reis\\source\\repos\\net9poc\\Auth\\Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jmtrr\\source\\repos\\Benchmark\\Auth\\Auth.csproj",
+        "projectUniqueName": "C:\\Users\\Joao Reis\\source\\repos\\net9poc\\Auth\\Auth.csproj",
         "projectName": "Auth",
-        "projectPath": "C:\\Users\\jmtrr\\source\\repos\\Benchmark\\Auth\\Auth.csproj",
-        "packagesPath": "C:\\Users\\jmtrr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jmtrr\\source\\repos\\Benchmark\\Auth\\obj\\",
+        "projectPath": "C:\\Users\\Joao Reis\\source\\repos\\net9poc\\Auth\\Auth.csproj",
+        "packagesPath": "C:\\Users\\Joao Reis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Joao Reis\\source\\repos\\net9poc\\Auth\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jmtrr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Joao Reis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\Joao Reis\\OneDrive - McKinsey & Company\\Desktop": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/Y3ET8cGf1Cz21Ini61xj9SRDm2qtQoDoG8wCyRNjg7nkexuMf7/api": {}
         },
         "frameworks": {
           "net9.0": {

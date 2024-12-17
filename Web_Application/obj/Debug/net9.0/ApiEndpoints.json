@@ -1,0 +1,141 @@
+[
+  {
+    "ContainingType": "Web_Application.Controllers.CategoryController",
+    "Method": "GetCategoriesPaginated",
+    "RelativePath": "Category/GetCategoriesPaginated",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Common.Models.Pagination.PagedResult\u00601[[Common.Models.Pagination.TreeNode\u00601[[Common.Models.Domain.Category, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Get Categories Paginated"
+  },
+  {
+    "ContainingType": "Web_Application.Controllers.UserController",
+    "Method": "CreateUser",
+    "RelativePath": "User/CreateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createUserDto",
+        "Type": "Common.Models.DTO.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Common.Models.Domain.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Create User"
+  },
+  {
+    "ContainingType": "Web_Application.Controllers.UserController",
+    "Method": "GetAll",
+    "RelativePath": "User/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Common.Models.Domain.User, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Get Users"
+  },
+  {
+    "ContainingType": "Web_Application.Controllers.UserController",
+    "Method": "GetById",
+    "RelativePath": "User/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Common.Models.Domain.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Get User By Id"
+  },
+  {
+    "ContainingType": "Web_Application.Controllers.UserController",
+    "Method": "GetUsersPaginated",
+    "RelativePath": "User/GetUsersPaginated",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Common.Models.Pagination.PagedResult\u00601[[Common.Models.Domain.User, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Get Users Paginated"
+  }
+]

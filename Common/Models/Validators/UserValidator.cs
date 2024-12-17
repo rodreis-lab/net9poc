@@ -12,8 +12,6 @@ namespace Common.Models.Validators
         {
             Guard.Against.CollectIfNull(user.Id, nameof(user.Id), errorCollector);
 
-            Guard.Against.CollectIfInvalidInput(user.ParentId, nameof(user.ParentId), pId => pId != user.Id, errorCollector,  "Id and parent id must be different.");
-
             Guard.Against.CollectIfInvalidFormat(user.Email, nameof(user.Email), @"^[^@]+@[^@]+\.[^@]+$", errorCollector);
             
             Guard.Against.CollectIfStringTooShort(user.Name, nameof(user.Name), 3, errorCollector, "Name has a minimum char length of 3.");

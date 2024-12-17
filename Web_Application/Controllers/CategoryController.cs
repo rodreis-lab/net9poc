@@ -1,12 +1,27 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Ardalis.Result.AspNetCore;
+using Common.Models.Domain;
+using Microsoft.AspNetCore.Mvc;
+using Web_Application.Services;
+using Common.Models.Pagination;
 
 namespace Web_Application.Controllers
 {
-    public class CategoryController : Controller
+    [ApiController]
+    [Route("[controller]/[action]")]
+    //[Authorize]
+    public class CategoryController : ControllerBase
     {
-        public IActionResult Index()
+        private readonly ICategoryService _categoryService;
+
+        public CategoryController(ICategoryService categoryService)
         {
-            return View();
+            _categoryService = categoryService;
+        }
+
+        [HttpGet(Name = "Get Categories Paginated")]
+        public ActionResult<Common.Models.Pagination.PagedResult<TreeNode<Category>>> GetCategoriesPaginated(int page = 1, int pageSize = 10)
+        {
+            return this.ToActionResult(_categoryService.GetCategoriesPaginated(page, pageSize));
         }
     }
 }

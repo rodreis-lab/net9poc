@@ -1,0 +1,13 @@
+C:\Users\Joao Reis\source\repos\net9poc\Common\obj\Debug\net9.0\Common.csproj.AssemblyReference.cache
+C:\Users\Joao Reis\source\repos\net9poc\Common\obj\Debug\net9.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joao Reis\source\repos\net9poc\Common\obj\Debug\net9.0\Common.AssemblyInfoInputs.cache
+C:\Users\Joao Reis\source\repos\net9poc\Common\obj\Debug\net9.0\Common.AssemblyInfo.cs
+C:\Users\Joao Reis\source\repos\net9poc\Common\obj\Debug\net9.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\Joao Reis\source\repos\net9poc\Common\obj\Debug\net9.0\Common.sourcelink.json
+C:\Users\Joao Reis\source\repos\net9poc\Common\bin\Debug\net9.0\Common.deps.json
+C:\Users\Joao Reis\source\repos\net9poc\Common\bin\Debug\net9.0\Common.dll
+C:\Users\Joao Reis\source\repos\net9poc\Common\bin\Debug\net9.0\Common.pdb
+C:\Users\Joao Reis\source\repos\net9poc\Common\obj\Debug\net9.0\Common.dll
+C:\Users\Joao Reis\source\repos\net9poc\Common\obj\Debug\net9.0\refint\Common.dll
+C:\Users\Joao Reis\source\repos\net9poc\Common\obj\Debug\net9.0\Common.pdb
+C:\Users\Joao Reis\source\repos\net9poc\Common\obj\Debug\net9.0\ref\Common.dll

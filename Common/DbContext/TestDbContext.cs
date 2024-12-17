@@ -13,6 +13,8 @@ namespace Common
 
         public DbSet<User> Users { get; set; }
 
+        public DbSet<Category> Categories { get; set; }
+
         private static DbContextOptions<TestDbContext> GetInMemoryOptions()
         {
             // Generate a unique database name for each instance

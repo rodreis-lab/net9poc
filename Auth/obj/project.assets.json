@@ -147,7 +147,7 @@
           }
         }
       },
-      "Scalar.AspNetCore/1.2.60": {
+      "Scalar.AspNetCore/1.2.66": {
         "type": "package",
         "compile": {
           "lib/net9.0/Scalar.AspNetCore.dll": {
@@ -368,10 +368,10 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Scalar.AspNetCore/1.2.60": {
-      "sha512": "5738WPY//vHFcQk6eyqiKuxjJT0UrNg5myUzSBcASw1rlbEscSYIB8YyGqr6PU8AdmXbpis/8RaRYoKcJd9IXw==",
+    "Scalar.AspNetCore/1.2.66": {
+      "sha512": "BKz+OAl2LTThoNoj7TnXFoXqmZzawXDFhmP5dPDfTe7Z7Dls632vxKxCaKhowKFRbiTZIcrvWmiVMSNrsBAYaQ==",
       "type": "package",
-      "path": "scalar.aspnetcore/1.2.60",
+      "path": "scalar.aspnetcore/1.2.66",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -381,7 +381,7 @@
         "lib/net8.0/Scalar.AspNetCore.xml",
         "lib/net9.0/Scalar.AspNetCore.dll",
         "lib/net9.0/Scalar.AspNetCore.xml",
-        "scalar.aspnetcore.1.2.60.nupkg.sha512",
+        "scalar.aspnetcore.1.2.66.nupkg.sha512",
         "scalar.aspnetcore.nuspec"
       ]
     },

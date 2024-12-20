@@ -14,7 +14,7 @@
           "Common": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.0",
-          "Scalar.AspNetCore": "1.2.60"
+          "Scalar.AspNetCore": "1.2.66"
         },
         "runtime": {
           "Web_Application.dll": {}
@@ -565,11 +565,11 @@
           }
         }
       },
-      "Scalar.AspNetCore/1.2.60": {
+      "Scalar.AspNetCore/1.2.66": {
         "runtime": {
           "lib/net9.0/Scalar.AspNetCore.dll": {
-            "assemblyVersion": "1.2.60.0",
-            "fileVersion": "1.2.60.0"
+            "assemblyVersion": "1.2.66.0",
+            "fileVersion": "1.2.66.0"
           }
         }
       },
@@ -1120,12 +1120,12 @@
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
-    "Scalar.AspNetCore/1.2.60": {
+    "Scalar.AspNetCore/1.2.66": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5738WPY//vHFcQk6eyqiKuxjJT0UrNg5myUzSBcASw1rlbEscSYIB8YyGqr6PU8AdmXbpis/8RaRYoKcJd9IXw==",
-      "path": "scalar.aspnetcore/1.2.60",
-      "hashPath": "scalar.aspnetcore.1.2.60.nupkg.sha512"
+      "sha512": "sha512-BKz+OAl2LTThoNoj7TnXFoXqmZzawXDFhmP5dPDfTe7Z7Dls632vxKxCaKhowKFRbiTZIcrvWmiVMSNrsBAYaQ==",
+      "path": "scalar.aspnetcore/1.2.66",
+      "hashPath": "scalar.aspnetcore.1.2.66.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",
